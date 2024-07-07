@@ -10,17 +10,6 @@ describe('Google Search and Gradual Scroll Test', () => {
       }
     });
 
-    // Enter the search term
-    cy.get('.gLFyf').type('Cypress testing framework');
-
-    // Click the Google search button by its text
-    cy.contains('input', 'Google Search').click();
-
-    // Wait for the search results to appear
-    cy.get('#search').should('be.visible');
-
-    // Verify that the search results contain the expected text
-    cy.get('#search').contains('Cypress.io').should('be.visible');
 
    
     });

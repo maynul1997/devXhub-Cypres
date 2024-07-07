@@ -11,6 +11,12 @@ describe('Google Search and Gradual Scroll Test', () => {
     });
 
      //need to scroll page
+     // Scroll down
+     for (let i = 0; i < 20; i++) {
+      cy.scrollTo(0, 900 * (i + 1));
+      cy.wait(500);
+  }
+
 
    
     });

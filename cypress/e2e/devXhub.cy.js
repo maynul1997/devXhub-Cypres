@@ -27,12 +27,12 @@ describe('Google Search and Gradual Scroll Test', () => {
       });
     };
   
-    
+    cy.get('.h-8.w-8.cursor-pointer').click();
     // Scroll down smoothly
     smoothScroll('down');
 
     // Scroll up smoothly
-    smoothScroll('up');
+    //smoothScroll('up');
 
   
   

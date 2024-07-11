@@ -10,8 +10,10 @@ describe('Google Search and Gradual Scroll Test', () => {
       }
     });
 
+    cy.viewport(1920, 1080)
 
-    cy.get('.h-8.w-8.cursor-pointer').click();
+    //This line for tab view Button where all menu remains hidden
+    //cy.get('.h-8.w-8.cursor-pointer').click();
     
     // Define a function to scroll smoothly
     const smoothScroll = (direction = 'down', stepSize = 500, duration = 1500, waitTime = 750) => {

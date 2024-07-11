@@ -10,8 +10,10 @@ describe('Google Search and Gradual Scroll Test', () => {
       }
     });
 
-  
+    cy.viewport(1920, 1080)
 
+    cy.get('.h-8.w-8.cursor-pointer').click();
+    
     // Define a function to scroll smoothly
     const smoothScroll = (direction = 'down', stepSize = 500, duration = 1500, waitTime = 750) => {
       cy.document().then((doc) => {
@@ -27,12 +29,13 @@ describe('Google Search and Gradual Scroll Test', () => {
       });
     };
   
-    cy.get('.h-8.w-8.cursor-pointer').click();
+   
+
     // Scroll down smoothly
     smoothScroll('down');
 
     // Scroll up smoothly
-    //smoothScroll('up');
+    smoothScroll('up');
 
   
   

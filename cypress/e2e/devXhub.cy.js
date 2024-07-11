@@ -10,7 +10,6 @@ describe('Google Search and Gradual Scroll Test', () => {
       }
     });
 
-    cy.viewport(1920, 1080)
 
     cy.get('.h-8.w-8.cursor-pointer').click();
     
